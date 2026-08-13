@@ -1,0 +1,190 @@
+import type { Album, BlogPost } from './types';
+
+const generateCoverUrl = (title: string) => `https://picsum.photos/seed/${title.replace(/[^a-zA-Z0-9]/g, '')}/500/500`;
+
+export const ALBUMS: Album[] = [
+  {
+    title: "Retro Gaming Vibes: Synthwave Arcade",
+    year: 2025,
+    genre: "Synthwave",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/retro-gaming-vibes--synthwave-arcade",
+    coverUrl: generateCoverUrl("Retro Gaming Vibes: Synthwave Arcade"),
+  },
+  {
+    title: "24/7 Study Lo-Fi",
+    year: 2025,
+    genre: "Lofi",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/247-study-lo-fi-focus-relax-repeat",
+    coverUrl: generateCoverUrl("247 Study Lo-Fi"),
+  },
+  {
+    title: "Jazzhop Coffee Break",
+    year: 2025,
+    genre: "Jazzhop",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/jazzhop-coffee-break-chill-beats-for-work--relaxation",
+    coverUrl: generateCoverUrl("Jazzhop Coffee Break"),
+  },
+  {
+    title: "Yoga Flow Essentials",
+    year: 2025,
+    genre: "Ambient",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/yoga-flow-essentials",
+    coverUrl: generateCoverUrl("Yoga Flow Essentials"),
+  },
+  {
+    title: "Epic Trailer Music",
+    year: 2025,
+    genre: "Cinematic",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/epic-trailer-music-cinematic-instrumentals-for-creators",
+    coverUrl: generateCoverUrl("Epic Trailer Music"),
+  },
+  {
+    title: "REIMAGINED",
+    year: 2025,
+    genre: "Jazz",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/reimagined-3",
+    coverUrl: generateCoverUrl("REIMAGINED"),
+  },
+  {
+    title: "Nature's Embrace",
+    year: 2025,
+    genre: "Lofi",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/headphone-hero--natures-embrace",
+    coverUrl: generateCoverUrl("Nature's Embrace"),
+  },
+  {
+    title: "Let's Go Crazy",
+    year: 2025,
+    genre: "Electronic",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/lets-go-crazy",
+    coverUrl: generateCoverUrl("Let's Go Crazy"),
+  },
+  {
+    title: "Guitar Odyssey, Vol. 4",
+    year: 2025,
+    genre: "Metal",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/guitar-odyssey-vol-4",
+    coverUrl: generateCoverUrl("Guitar Odyssey, Vol. 4"),
+  },
+  {
+    title: "Guitar Odyssey, Vol. 3",
+    year: 2025,
+    genre: "Metal",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/guitar-odyssey-vol-3",
+    coverUrl: generateCoverUrl("Guitar Odyssey, Vol. 3"),
+  },
+  {
+    title: "Relentless Hustle",
+    year: 2024,
+    genre: "Hip-Hop",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/relentless-hustle",
+    coverUrl: generateCoverUrl("Relentless Hustle"),
+  },
+  {
+    title: "Hacking the Simulation",
+    year: 2024,
+    genre: "Electronic",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/hhacking-the-simulation",
+    coverUrl: generateCoverUrl("Hacking the Simulation"),
+  },
+  {
+    title: "Happy Halloween",
+    year: 2024,
+    genre: "Electronic",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/hhappy-halloween",
+    coverUrl: generateCoverUrl("Happy Halloween"),
+  },
+  {
+    title: "Seeds Of Change",
+    year: 2024,
+    genre: "Hip-Hop",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/seeds-of-change",
+    coverUrl: generateCoverUrl("Seeds Of Change"),
+  },
+  {
+    title: "YYXXYY",
+    year: 2024,
+    genre: "Ambient",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/yyxxyy",
+    coverUrl: generateCoverUrl("YYXXYY"),
+  },
+  {
+    title: "Galactic Flex",
+    year: 2024,
+    genre: "Space Funk",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/galactic-flex-2",
+    coverUrl: generateCoverUrl("Galactic Flex"),
+  },
+  {
+    title: "Unleash The Beat",
+    year: 2024,
+    genre: "Dubstep",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/unleash-the-beat-2",
+    coverUrl: generateCoverUrl("Unleash The Beat"),
+  },
+  {
+    title: "Galactic Conspiracy",
+    year: 2024,
+    genre: "Electronic",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/galactic-conspiracy",
+    coverUrl: generateCoverUrl("Galactic Conspiracy"),
+  },
+  {
+    title: "LoFi Beats For Studying",
+    year: 2024,
+    genre: "Lofi",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/lofi-beats-for-studying-2",
+    coverUrl: generateCoverUrl("LoFi Beats For Studying"),
+  },
+  {
+    title: "The Hero's Journey",
+    year: 2024,
+    genre: "Hip-Hop",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/the-heros-journey-2",
+    coverUrl: generateCoverUrl("The Hero's Journey"),
+  },
+  {
+    title: "Cosmic Beats & Basslines",
+    year: 2024,
+    genre: "Electronic",
+    hyperfollowUrl: "http://distrokid.com/hyperfollow/headphonehero/cosmic-beats--basslines",
+    coverUrl: generateCoverUrl("Cosmic Beats & Basslines"),
+  },
+  {
+    title: "Guitar Odyssey",
+    year: 2024,
+    genre: "Rock",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/guitar-odyssey-2",
+    coverUrl: generateCoverUrl("Guitar Odyssey"),
+  },
+  {
+    title: "Guitar Odyssey, Vol. 2",
+    year: 2024,
+    genre: "Metal",
+    hyperfollowUrl: "https://distrokid.com/hyperfollow/headphonehero/guitar-odyssey-vol-2",
+    coverUrl: generateCoverUrl("Guitar Odyssey, Vol. 2"),
+  },
+];
+
+const generateImageUrl = (seed: string) => `https://picsum.photos/seed/${seed.replace(/[^a-zA-Z0-9]/g, '')}/600/400`;
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    title: "Who is Headphone Hero? The Mind Behind the Music",
+    date: "October 26, 2024",
+    excerpt: "Delve into the origin of Headphone Hero, the ambitious project by artist Nevik Rountree, and explore the ethos of the NVK Record Label that champions its innovative sound.",
+    imageUrl: generateImageUrl("Mind Behind Music"),
+  },
+  {
+    title: "Diving into the Discography: 84 Albums and Counting",
+    date: "October 22, 2024",
+    excerpt: "With a staggering catalog of 84 albums, Headphone Hero's versatility is unmatched. From 'Cosmic Symphony 1' to 'Let's Go Crazy,' we chart the vast musical territory explored.",
+    imageUrl: generateImageUrl("Discography Dive"),
+  },
+  {
+    title: "More Than Music: The 'Headphone Heroes' Book Series",
+    date: "October 18, 2024",
+    excerpt: "Discover the transmedia world of 'Headphone Heroes' and its first installment, 'Symphony of Salvation.' A story of alien headphones, newfound powers, and cosmic destiny.",
+    imageUrl: generateImageUrl("Headphone Heroes Book"),
+  },
+];
