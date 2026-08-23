@@ -2,5 +2,7 @@
   "name": "Headphone Hero × NVK Records (Canon Restoration v2.0)",
   "description": "Truth-grounded, provenance-aware real-asset bridge connecting Headphone Hero music catalog, Nevik Elmo Rountree artist profile, Book 1 Awakening the Frequency, and NVK Records.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

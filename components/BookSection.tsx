@@ -15,16 +15,22 @@ export const BookSection: React.FC = () => {
     if ('speechSynthesis' in window) {
       const updateVoices = () => {
         const availableVoices = window.speechSynthesis.getVoices();
-        setVoices(availableVoices);
-        if (availableVoices.length > 0 && !selectedVoiceUri) {
-          // Find best default voice
-          const bestVoice = availableVoices.find(v => 
-            (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Enhanced') || v.name.includes('Samantha') || v.name.includes('Microsoft Aria') || v.name.includes('Microsoft Zira')) && v.lang.startsWith('en')
-          ) || availableVoices.find(v => v.lang.startsWith('en')) || availableVoices[0];
-          
-          if (bestVoice) {
-            setSelectedVoiceUri(bestVoice.voiceURI);
-          }
+        // Sort voices to put Neural / Online / Google / Natural / Premium voices first
+        const scoredVoices = availableVoices.map(v => {
+          let score = 0;
+          const name = v.name.toLowerCase();
+          if (name.includes('natural') || name.includes('neural')) score += 10;
+          if (name.includes('online') || name.includes('premium')) score += 8;
+          if (name.includes('google') || name.includes('siri') || name.includes('microsoft aria') || name.includes('microsoft zira') || name.includes('enhanced')) score += 6;
+          if (v.lang.startsWith('en')) score += 5;
+          return { voice: v, score };
+        }).sort((a, b) => b.score - a.score);
+
+        const sortedVoices = scoredVoices.map(s => s.voice);
+        setVoices(sortedVoices);
+
+        if (sortedVoices.length > 0 && !selectedVoiceUri) {
+          setSelectedVoiceUri(sortedVoices[0].voiceURI);
         }
       };
 

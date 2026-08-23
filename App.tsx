@@ -5,6 +5,7 @@ import MusicSection from './components/MusicSection';
 import { BookSection } from './components/BookSection';
 import { RealAssetBridge } from './components/RealAssetBridge';
 import { CmsRegistrySection } from './components/CmsRegistrySection';
+import { DistrokidPortal } from './components/DistrokidPortal';
 import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 import ParticleBackground from './components/ParticleBackground';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
           <MusicSection />
           <BookSection />
           <RealAssetBridge />
+          <DistrokidPortal />
           <CmsRegistrySection />
           <BlogSection />
         </main>
